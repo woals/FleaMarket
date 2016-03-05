@@ -99,7 +99,11 @@ public class ReleaseFragment extends Fragment {
             product.setProductorPhone(productorPhone);
             product.setProductorDescribe(productorDescribe);
             product.setProductprice(productprice);
-            if (App.flag) {
+            if(productName.isEmpty()){
+                Toast.makeText(getContext(), "产品名不能为空", Toast.LENGTH_SHORT).show();
+            }else if (productorPhone.isEmpty()){
+                Toast.makeText(getContext(), "手机号不能为空", Toast.LENGTH_SHORT).show();
+            }else if (App.flag) {
                 String productorkey = App.KEY;
                 product.setProductkey(productorkey);
                 boolean flag = productService.release(product);

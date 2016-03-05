@@ -14,7 +14,6 @@ import android.widget.GridView;
 
 import com.yinyxn.fleamarket.App;
 import com.yinyxn.fleamarket.R;
-import com.yinyxn.fleamarket.domain.P;
 import com.yinyxn.fleamarket.domain.Product;
 import com.yinyxn.fleamarket.service.DatabaseHelper;
 
@@ -70,7 +69,6 @@ public class ClassifyFragment extends Fragment {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-            P p = new P();
             String classify = data.get(position);
             data = new ArrayList<String>();
             data1 = new ArrayList<String>();
@@ -97,7 +95,6 @@ public class ClassifyFragment extends Fragment {
                 String productorPrice = cursor.getString(7);
 
                 data.add(productName);
-                p.setTitle(productName);
                 data1.add(productorName);
                 data2.add(productorPhone);
                 data3.add(productorDescribe);
