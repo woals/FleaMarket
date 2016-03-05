@@ -56,11 +56,16 @@ public class RegisterActivity extends AppCompatActivity {
                 user.setSex(sexstr);
                 user.setTime(time);
                 int flag = uService.register(user);
-                if (flag == 3) {
+                if (name.isEmpty()){
+                    Toast.makeText(RegisterActivity.this, "姓名不能为空", Toast.LENGTH_SHORT).show();
+                }else if (pass.isEmpty()){
+                    Toast.makeText(RegisterActivity.this, "密码不能为空", Toast.LENGTH_SHORT).show();
+                }else if (phone.isEmpty()){
+                    Toast.makeText(RegisterActivity.this, "手机号不能为空", Toast.LENGTH_SHORT).show();
+                }else if (flag == 3) {
                     Toast.makeText(RegisterActivity.this, "注册成功", Toast.LENGTH_LONG).show();
                     startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
                     finish();
-//                    Login();
                 } else if (flag == 1) {
                     Toast.makeText(RegisterActivity.this, "注册失败，用户已注册", Toast.LENGTH_LONG).show();
                 } else if (flag == 2) {
