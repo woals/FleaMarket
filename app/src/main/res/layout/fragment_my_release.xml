@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yinyxn.fleamarket.fragment.MyReleaseFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+        android:text="我的发布"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_red_light"/>
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="475dp"
+        android:id="@+id/gridView3"
+        android:layout_gravity="center_horizontal|bottom"
+        android:choiceMode="singleChoice"
+        android:numColumns="auto_fit" />
+
+</FrameLayout>

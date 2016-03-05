@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:padding="5dp"><!--获得焦点listview可点击-->
+
+
+    <TextView
+        android:id="@+id/textView_productid"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="id"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView_productordescribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="描述:"
+        android:layout_below="@+id/button_deleteproductte"
+        android:layout_alignLeft="@+id/textView_productor"
+        android:layout_alignStart="@+id/textView_productor" />
+
+    <TextView
+        android:id="@+id/textView_productclass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="价格:"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_alignTop="@+id/textView_textView_productname"
+        android:layout_toRightOf="@+id/textView_textView_productname"
+        android:layout_toEndOf="@+id/textView_textView_productname" />
+
+    <TextView
+        android:id="@+id/textView_productname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:text="产品名:"
+        android:layout_above="@+id/button_deleteproductte"
+        android:layout_toRightOf="@+id/textView_productid"
+        android:layout_toEndOf="@+id/textView_productid" />
+
+    <TextView
+        android:id="@+id/textView_productor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_productname"
+        android:layout_alignStart="@+id/textView_productname"
+        android:layout_centerVertical="true"
+        android:text="姓名:" />
+
+    <TextView
+        android:id="@+id/textView_productorphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   电话:"
+        android:layout_alignTop="@+id/textView_textView_productor"
+        android:layout_toRightOf="@+id/textView_textView_productor"
+        android:layout_toEndOf="@+id/textView_textView_productor" />
+
+    <Button
+        android:id="@+id/button_deleteproductte"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:longClickable="true"
+        android:text="取消收藏" />
+
+    <TextView
+        android:id="@+id/textView_textView_productor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView_productor"
+        android:layout_toEndOf="@+id/textView_productor"
+        android:layout_toRightOf="@+id/textView_productor"
+        android:text="姓名" />
+
+    <TextView
+        android:id="@+id/textView_textView_productorphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:layout_alignTop="@+id/textView_productorphone"
+        android:layout_toRightOf="@+id/textView_productorphone"
+        android:layout_toEndOf="@+id/textView_productorphone" />
+
+    <TextView
+        android:id="@+id/textView_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignTop="@+id/textView_textView_productordescribe"
+        android:layout_alignLeft="@+id/textView_productorphone" />
+
+    <TextView
+        android:id="@+id/textView_textView_productordescribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView_productordescribe"
+        android:layout_toEndOf="@+id/textView_productordescribe"
+        android:layout_toRightOf="@+id/textView_productordescribe"
+        android:text="描述" />
+
+    <TextView
+        android:id="@+id/textView_textView_productname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="产品名"
+        android:layout_alignTop="@+id/textView_productname"
+        android:layout_toRightOf="@+id/textView_productname"
+        android:layout_toEndOf="@+id/textView_productname" />
+
+    <TextView
+        android:id="@+id/textView_textView_productclass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="价格"
+        android:layout_alignTop="@+id/textView_productclass"
+        android:layout_toRightOf="@+id/textView_productclass"
+        android:layout_toEndOf="@+id/textView_productclass" />
+
+</RelativeLayout>

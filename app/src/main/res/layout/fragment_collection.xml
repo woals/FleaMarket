@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yinyxn.fleamarket.fragment.MyCollectionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:text="我的收藏"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="24sp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="474dp"
+        android:id="@+id/listView6"
+        android:layout_gravity="center_horizontal|bottom" />
+
+</FrameLayout>

@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/classify_fragment"
+    tools:context="com.yinyxn.fleamarket.fragment.ClassifyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="分类"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="35sp"
+        android:gravity="center_horizontal"/>
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="456dp"
+        android:id="@+id/gridView"
+        android:layout_gravity="center_horizontal|bottom"
+        android:choiceMode="singleChoice"
+        android:numColumns="auto_fit" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="462dp"
+        android:id="@+id/listView5"
+        android:layout_gravity="center_horizontal|bottom"
+        android:visibility="invisible"/>
+
+
+</FrameLayout>

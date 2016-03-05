@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yinyxn.fleamarket.fragment.MarketFragment"
+    android:id="@+id/market">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="市场"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="35sp"
+        android:gravity="center_horizontal" />
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="462dp"
+        android:id="@+id/gridView2"
+        android:layout_gravity="center_horizontal|bottom"
+        android:numColumns="auto_fit"
+        android:choiceMode="singleChoice" />
+
+</FrameLayout>

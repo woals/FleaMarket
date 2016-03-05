@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.yinyxn.fleamarket.ModifyActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="left|top"
+        android:background="@android:color/holo_purple"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView2"
+        android:layout_gravity="center_horizontal|top"
+        android:background="@android:color/holo_purple"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView1"
+        android:layout_gravity="right|top"
+        android:background="@android:color/holo_purple"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_productname"
+        android:text="产品名："
+        android:textSize="16sp"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignRight="@+id/textView_name"
+        android:layout_alignEnd="@+id/textView_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="电话："
+        android:textSize="16sp"
+        android:id="@+id/textView_textView_productordescribe"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/textView_name"
+        android:layout_alignRight="@+id/textView_description"
+        android:layout_alignEnd="@+id/textView_description" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="类型："
+        android:id="@+id/textView_class"
+        android:textSize="16sp"
+        android:layout_below="@+id/textView_productname"
+        android:layout_alignRight="@+id/textView_productname"
+        android:layout_alignEnd="@+id/textView_productname"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="产品描述："
+        android:textSize="16sp"
+        android:id="@+id/textView_description"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView_textView_productordescribe"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="姓名："
+        android:id="@+id/textView_name"
+        android:textSize="16sp"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/textView_class"
+        android:layout_alignLeft="@+id/textView_textView_productordescribe"
+        android:layout_alignStart="@+id/textView_textView_productordescribe" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText_productorName1"
+        android:layout_alignTop="@+id/textView_name"
+        android:layout_toRightOf="@+id/textView_name"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_alignEnd="@+id/imageView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editText_productorPhone1"
+        android:layout_alignTop="@+id/textView_textView_productordescribe"
+        android:layout_alignLeft="@+id/editText_productorName1"
+        android:layout_alignStart="@+id/editText_productorName1"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_alignEnd="@+id/imageView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText_productName1"
+        android:layout_alignTop="@+id/textView_productname"
+        android:layout_alignLeft="@+id/editText_productorName1"
+        android:layout_alignStart="@+id/editText_productorName1"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_alignEnd="@+id/imageView2" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner1"
+        android:entries="@array/item"
+        android:layout_alignTop="@+id/textView_class"
+        android:layout_toRightOf="@+id/textView_class"
+        android:spinnerMode="dialog" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_productorDescribe1"
+        android:layout_below="@+id/textView_description"
+        android:layout_toRightOf="@+id/textView_description"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_alignEnd="@+id/imageView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="价格："
+        android:id="@+id/textView31"
+        android:layout_below="@+id/editText_productorDescribe1"
+        android:layout_alignLeft="@+id/textView_textView_productordescribe"
+        android:layout_alignStart="@+id/textView_textView_productordescribe" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_price1"
+        android:layout_below="@+id/editText_productorDescribe1"
+        android:layout_toRightOf="@+id/textView31"
+        android:layout_toEndOf="@+id/textView31" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="修改"
+        android:id="@+id/button8_modify"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_alignEnd="@+id/imageView1"
+        style="@style/Base.Widget.AppCompat.Button.Borderless" />
+
+</RelativeLayout>

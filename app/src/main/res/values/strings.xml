@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">FleaMarket</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="item">
+        <item>家具</item>
+        <item>健身</item>
+        <item>学习</item>
+        <item>穿戴</item>
+        <item>数码</item>
+        <item>其他</item>
+    </string-array>
+    <string name="title_activity_my">MyActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="cancel">取消收藏</string>
+</resources>
